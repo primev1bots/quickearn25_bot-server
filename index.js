@@ -8,9 +8,9 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // URLs configuration
-const FRONTEND_URL = 'https://freebox-primev1.vercel.app';
-const ADMIN_URL = 'https://freebox-primev1admin.vercel.app';
-const DASHBOARD_URL = 'https://freebox-primev1.vercel.app';
+const FRONTEND_URL = 'quickearn25-primev1.vercel.app';
+const ADMIN_URL = 'quickearn25-primev1admin.vercel.app';
+const DASHBOARD_URL = 'quickearn25-primev1.vercel.app';
 
 // Middleware
 app.use(cors({
@@ -27,7 +27,7 @@ const frontendConnections = [];
 const MAX_CONNECTIONS = 1000;
 
 // --- Firebase Configuration ---
-const FIREBASE_DB_URL = 'https://freebox-primev1-default-rtdb.firebaseio.com';
+const FIREBASE_DB_URL = 'https://quickearn25bot-default-rtdb.firebaseio.com';
 
 // --- Helper Functions ---
 async function getData(path) {
@@ -56,7 +56,7 @@ async function updateData(path, data) {
 }
 
 // --- Telegram Bot Setup ---
-const BOT_TOKEN = '8238023933:AAGIjdfl_fJhS_V_h2FUY_ufMmr531Eb68M';
+const BOT_TOKEN = '8166168865:AAGIyhRUWxayCYc2YIH3Lc3XaoMLzwfTjyU';
 const bot = new Telegraf(BOT_TOKEN);
 
 // --- Telegram Bot Commands ---
@@ -674,5 +674,6 @@ process.on('unhandledRejection', (reason, promise) => {
 });
 
 module.exports = app;
+
 
 
