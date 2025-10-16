@@ -8,9 +8,9 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // URLs configuration
-const FRONTEND_URL = 'quickearn25-primev1.vercel.app';
-const ADMIN_URL = 'quickearn25-primev1admin.vercel.app';
-const DASHBOARD_URL = 'quickearn25-primev1.vercel.app';
+const FRONTEND_URL = 'https://quickearn25-primev1.vercel.app';
+const ADMIN_URL = 'https://quickearn25-primev1admin.vercel.app';
+const DASHBOARD_URL = 'https://quickearn25-primev1.vercel.app';
 
 // Middleware
 app.use(cors({
@@ -674,6 +674,7 @@ process.on('unhandledRejection', (reason, promise) => {
 });
 
 module.exports = app;
+
 
 
 
